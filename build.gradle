@@ -6,7 +6,7 @@ plugins {
 
 group = 'org.launchcode'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '13'
 
 configurations {
 	developmentOnly
@@ -31,4 +31,8 @@ dependencies {
 
 test {
 	useJUnitPlatform()
+}
+
+bootRun {
+	sourceResources sourceSets.main
 }
